@@ -2,6 +2,8 @@
 .navbar-brand {
     color: #009970;
     transition: 0.3s color;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-icon {
@@ -15,9 +17,20 @@
 
 }
 
+.brand-name {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
 .navbar-toggler-icon {
     height: 32px;
 }
+
+
 
 .login-button:hover {
     background-color: #00b383;
@@ -45,6 +58,14 @@
     color: #000;
 }
 
+.navbar {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
 @media(min-width: 992px) {
 
     .nav-link::before {
@@ -68,17 +89,32 @@
     }
 }
 
-.navbar {
-    background-color: white;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
+@media (max-width: 768px) {
+    .navbar {
+        padding: 2px
+    }
+
+    .brand-name {
+        font-weight: 900;
+        font-size: 18px;
+    }
+
+    .navbar-brand img {
+        width: 28px;
+        margin-left: 8px;
+    }
+
+    .navbar-icon i {
+        font-size: 16px;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+    }
 }
 
-
-.brand-name {
-    font-weight: 900;
-    font-size: 35px;
+.container-fluid {
+    padding: 0px
 }
 
 .offcanvas {
@@ -129,7 +165,7 @@
 
 .plant-card {
     width: 400px;
-    height: 600px;
+    height: 500px;
     /* margin-top: 100px; */
 }
 
@@ -219,6 +255,55 @@
     .profile-card {
         width: 400px;
     }
+}
+
+@media(max-width: 576px) {
+    .profile-card {
+        width: 330px;
+        height: 120px;
+        padding: 5px;
+
+    }
+
+    .profile-card .profile {
+        height: 70px;
+    }
+
+    .profile-card .profile h5 {
+        font-size: 20px;
+    }
+
+
+
+    .profile-card p {
+        font-size: 12px;
+    }
+
+    .plant-card {
+        width: 330px;
+        height: 420px;
+    }
+
+    .plant-card .content {
+        padding: 10px;
+        margin: 0px 30px;
+        text-align: center;
+    }
+
+    .plant-card .description {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .plant-card .main-button {
+        margin: 0px;
+    }
+
+    .main-button {
+
+        margin-right: 20px;
+    }
+
 }
 
 /************** Trend Section **************/
@@ -322,6 +407,7 @@
 
 
 
+
 /************ End Landing Section ************/
 
 
@@ -402,9 +488,6 @@
 }
 
 @media (max-width:992px) {
-
-
-
     .top-selling-card {
         width: 200px;
         height: 260px;
