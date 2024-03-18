@@ -91,7 +91,7 @@
 
 /************ Landing Section ************/
 .home-section {
-    background: url("/images/bg.svg") #ffffff26;
+    background: url(../images/bg.svg) #ffffff26;
     background-blend-mode: multiply;
     background-size: cover;
     width: 100%;
