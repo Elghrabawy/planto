@@ -1,0 +1,203 @@
+/************** Navbar **************/
+.navbar-brand {
+    color: #009970;
+    transition: 0.3s color;
+}
+
+.navbar-icon {
+    /* background-color: #009970; */
+    color: #595c5f;
+    font-size: 20px;
+    padding: 4px 12px;
+    margin: 0px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+
+}
+
+.navbar-toggler-icon {
+    height: 32px;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+    color: white;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+}
+
+@media(min-width: 992px) {
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2.5px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.25s ease-in-out;
+
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.navbar {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.home-section {
+    background: url("/images/bg.svg") #ffffff26;
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.brand-name {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.offcanvas {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+/************** End Navbar **************/
+
+/************ Landing Section ************/
+.block {
+    height: 150px;
+    /* background-color: red; */
+}
+
+.landing h1 {
+    color: #ffffff;
+    font-size: 80px;
+}
+
+.landing p {
+    color: #ffffff;
+}
+
+.main-card {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: white solid 2px;
+}
+
+.plant-card {
+    width: 400px;
+    margin-top: 100px;
+}
+
+.image-container {
+    position: relative;
+    height: 150px;
+}
+
+.image-container img {
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    width: 250px;
+    position: absolute;
+    bottom: 10px;
+    left: 61px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.content {
+    padding: 20px;
+}
+
+.plant-name {
+    color: white;
+    margin: 0 0 10px;
+}
+
+.description {
+    color: white;
+    margin: 0 0 20px;
+}
+
+.main-button {
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: #595c5f;
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-button:hover {
+    background-color: #ffffff4f;
+}
+
+.profile-info {
+    width: 40%;
+    margin: 20px;
+}
+
+.profile {
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+}
+
+.profile-card {
+    padding: 20px;
+    width: 360px;
+    margin-top: 20px;
+}
+
+.profile-info h5,
+.profile-card p {
+    margin: 0px;
+    color: white;
+}
+
+
+/************ End Landing Section ************/
