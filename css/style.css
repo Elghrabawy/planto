@@ -82,6 +82,7 @@
 }
 
 .offcanvas {
+    background-color: #31572c13;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
@@ -128,16 +129,19 @@
 
 .plant-card {
     width: 400px;
+    height: 600px;
     /* margin-top: 100px; */
 }
 
 .carousel-item .image-container {
     text-align: center;
-    height: auto;
+    height: 250px;
 }
 
 .carousel-item .image-container img {
     width: 250px;
+    height: 250px;
+    box-sizing: border-box;
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -223,18 +227,7 @@
     margin-top: 70px;
 }
 
-.section-title {
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
 
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 100px 80px rgba(0, 0, 0, 0.36), 0px 50.0488px 40.0391px rgba(0, 0, 0, 0.27372), 0px 30.1471px 24.1177px rgba(0, 0, 0, 0.234572), 0px 19.3198px 15.4559px rgba(0, 0, 0, 0.205522), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.18), 0px 7.88218px 6.30574px rgba(0, 0, 0, 0.154478), 0px 4.5288px 3.62304px rgba(0, 0, 0, 0.125428), 0px 1.99324px 1.59459px rgba(0, 0, 0, 0.0862802);
-
-}
 
 .trend-card {
     display: flex;
@@ -246,6 +239,33 @@
     align-items: center;
 }
 
+.section-label {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding: 20px;
+    position: relative;
+    background-color: #6667773a;
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+}
+
+
+.section-title {
+    width: fit-content;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 100px 80px rgba(0, 0, 0, 0.36), 0px 50.0488px 40.0391px rgba(0, 0, 0, 0.27372), 0px 30.1471px 24.1177px rgba(0, 0, 0, 0.234572), 0px 19.3198px 15.4559px rgba(0, 0, 0, 0.205522), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.18), 0px 7.88218px 6.30574px rgba(0, 0, 0, 0.154478), 0px 4.5288px 3.62304px rgba(0, 0, 0, 0.125428), 0px 1.99324px 1.59459px rgba(0, 0, 0, 0.0862802);
+}
+
+
 .trend-card .content {
     text-align: left;
     height: auto;
@@ -256,12 +276,12 @@
 .trend-card .image-container {
     position: relative;
     height: auto;
-
     top: -100px;
 }
 
 .trend-card .image-container img {
     width: 430px;
+    height: 430px;
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -286,7 +306,7 @@
 
 @media(max-width: 768px) {
     .trend-card .image-container {
-        top: -130px;
+        top: -190px;
         text-align: center;
         height: 100px;
     }
@@ -303,3 +323,126 @@
 
 
 /************ End Landing Section ************/
+
+
+
+/************ Top Selling Section ************/
+.top-selling {
+    background-color: #171f12;
+    background-size: cover;
+    height: auto;
+    overflow: hidden;
+}
+
+.top-selling-card {
+    width: 280px;
+    height: 370px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.top-selling-card .image-container {
+    position: relative;
+    height: 180px;
+    top: -62px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.top-selling-card .image-container img {
+    filter: drop-shadow(2px 4px 6px black);
+    width: 270px;
+    height: 270px;
+}
+
+.top-selling-card .content {
+    text-align: left;
+    width: auto;
+    margin: 10px;
+}
+
+.top-selling-card .content .plant-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.top-selling-card .content .description {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.top-selling-card {
+    margin-top: 40px;
+    border-radius: 60px;
+}
+
+.top-selling-card .content .sell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-selling-card .content .sell .price {
+    width: auto;
+
+    font-style: normal;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.top-selling-card .content .sell .icon-button {
+    margin: 0px;
+    padding: 7px 12px;
+}
+
+@media (max-width:992px) {
+
+
+
+    .top-selling-card {
+        width: 200px;
+        height: 260px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+    .top-selling-card .image-container {
+        height: 150px;
+    }
+
+    .top-selling-card .image-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .top-selling-card .content {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .top-selling-card .content .plant-name {
+        font-size: 24px;
+    }
+
+    .top-selling-card .content .description {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .top-selling-card {}
+
+    .top-selling-card .content .sell {}
+
+    .top-selling-card .content .sell .price {
+        font-size: 20px;
+    }
+
+    .top-selling-card .content .sell .icon-button {}
+}
