@@ -447,3 +447,50 @@
 
     .top-selling-card .content .sell .icon-button {}
 }
+
+
+@media (max-width:768px) {
+    .top-selling-card {
+        width: 160px;
+        height: 200px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 40px;
+        border-radius: 30px;
+    }
+
+    .top-selling-card .image-container {
+        height: 90px;
+    }
+
+    .top-selling-card .image-container img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .top-selling-card .content {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .top-selling-card .content .plant-name {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .top-selling-card .content .description {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .top-selling-card {}
+
+
+    .top-selling-card .content .sell .price {
+        font-size: 17px;
+    }
+
+    .top-selling-card .content .sell .icon-button {
+        font-size: 12px;
+    }
+}
