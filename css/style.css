@@ -75,13 +75,6 @@
     padding: 10px;
 }
 
-.home-section {
-    background: url("/images/bg.svg") #ffffff26;
-    background-blend-mode: multiply;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
 
 .brand-name {
     font-weight: 900;
@@ -96,6 +89,14 @@
 /************** End Navbar **************/
 
 /************ Landing Section ************/
+.home-section {
+    background: url("/images/bg.svg") #ffffff26;
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
 .block {
     height: 150px;
     /* background-color: red; */
@@ -116,38 +117,44 @@
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: white solid 2px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 9px 18.4px rgba(0, 0, 0, 0.267);
+
 }
 
 .plant-card {
     width: 400px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
-.image-container {
-    position: relative;
-    height: 150px;
+.carousel-item .image-container {
+    text-align: center;
+    height: auto;
 }
 
-.image-container img {
-    width: 100%;
-    position: absolute;
-    bottom: -30px;
+.carousel-item .image-container img {
     width: 250px;
-    position: absolute;
-    bottom: 10px;
-    left: 61px;
     filter: drop-shadow(2px 4px 6px black);
 }
 
 .content {
     padding: 20px;
+    margin: 0px 30px;
 }
 
 .plant-name {
     color: white;
     margin: 0 0 10px;
+}
+
+.price {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 .description {
@@ -159,7 +166,8 @@
     background-color: #ffffff00;
     color: white;
     border: none;
-    padding: 10px 25px;
+    margin-right: 20px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -190,7 +198,7 @@
 .profile-card {
     padding: 20px;
     width: 360px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .profile-info h5,
@@ -198,6 +206,100 @@
     margin: 0px;
     color: white;
 }
+
+@media(max-width: 992px) {
+    .landing {
+        text-align: center;
+    }
+
+    .profile-card {
+        width: 400px;
+    }
+}
+
+/************** Trend Section **************/
+
+.trendy {
+    margin-top: 70px;
+}
+
+.section-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 100px 80px rgba(0, 0, 0, 0.36), 0px 50.0488px 40.0391px rgba(0, 0, 0, 0.27372), 0px 30.1471px 24.1177px rgba(0, 0, 0, 0.234572), 0px 19.3198px 15.4559px rgba(0, 0, 0, 0.205522), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.18), 0px 7.88218px 6.30574px rgba(0, 0, 0, 0.154478), 0px 4.5288px 3.62304px rgba(0, 0, 0, 0.125428), 0px 1.99324px 1.59459px rgba(0, 0, 0, 0.0862802);
+
+}
+
+.trend-card {
+    display: flex;
+    margin: 100px 0px;
+    width: auto;
+    height: 400px;
+    border-radius: 150px;
+    text-align: end;
+    align-items: center;
+}
+
+.trend-card .content {
+    text-align: left;
+    height: auto;
+
+}
+
+
+.trend-card .image-container {
+    position: relative;
+    height: auto;
+
+    top: -100px;
+}
+
+.trend-card .image-container img {
+    width: 430px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.icon-button {
+    padding: 10px 20px
+}
+
+@media(max-width: 992px) {
+    .trend-card .image-container {
+
+        top: -40px;
+    }
+
+    .trend-card .image-container img {
+        width: 300px;
+    }
+
+    .trend-card .content {
+        /* text-align: center; */
+    }
+}
+
+@media(max-width: 768px) {
+    .trend-card .image-container {
+        top: -130px;
+        text-align: center;
+        height: 100px;
+    }
+
+    .trend-card .image-container img {
+        width: 250px;
+    }
+
+    .trend-card .content {
+        text-align: center;
+    }
+}
+
 
 
 /************ End Landing Section ************/

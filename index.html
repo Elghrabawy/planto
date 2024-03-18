@@ -1,173 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Import bootstrap css file -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Handle responsive view -->
-    <link rel="stylesheet" href="css/responsive.css" />
+  <!-- Import bootstrap css file -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
 
-    <!-- General css rules -->
-    <link rel="stylesheet" href="css/rules.css" />
+  <!-- Handle responsive view -->
+  <link rel="stylesheet" href="css/responsive.css" />
 
-    <!-- Main css file -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- General css rules -->
+  <link rel="stylesheet" href="css/rules.css" />
 
-    <!-- Import main font 'inter' -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Main css file -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <title>Planto</title>
-  </head>
+  <!-- Import main font 'inter' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <div class="container"></div>
-    <!--------- Navbar --------->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="#">
-          <img src="images/plant.svg" width="40px" alt="" />
-          <span class="brand-name">
-            Planto
-          </span>
-        </a>
+  <title>Planto</title>
+</head>
 
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Planto</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Plants Type</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">More</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">About</a>
-              </li>
+<body>
+  <div class="container"></div>
+  <!--------- Navbar --------->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#">
+        <img src="images/logo.svg" width="40px" alt="" />
+        <span class="brand-name">
+          Planto
+        </span>
+      </a>
 
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Planto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <a href="#" class="btn navbar-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </a>
-        <a href="#" class="btn navbar-icon">
-          <i class="fa-solid fa-bag-shopping"></i>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Plants Type</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">More</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>
-    <!--------- End navbar --------->
+      <a href="#" class="btn navbar-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a href="#" class="btn navbar-icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!--------- End navbar --------->
 
-    <!------- Landing Section ------->
-    <section class="home-section">
-      <div class="block"></div>
-      <div class="container">
-        <div class="row justify-content-around align-items-center">
-          <div
-            class="row justify-content-center col-lg-6 col-md-12 col-sm-12 col-12"
-          >
-            <div class="landing">
-              <h1>Breath Natureal</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
-                possimus sequi, impedit autem quas id animi consequatur,
-                quibusdam perferendis tempora harum itaque ex recusandae quos
-                tempore facilis voluptates quasi voluptas?
-              </p>
+  <!------- Landing Section ------->
+  <section class="home-section">
+    <div class="block"></div>
+    <div class="container">
+      <div class="row justify-content-around align-items-center">
+        <div class="row justify-content-center col-lg-6 col-md-12 col-sm-12 col-12">
+          <div class="landing">
+            <h1>Breath Natureal</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+              possimus sequi, impedit autem quas id animi consequatur,
+              quibusdam perferendis tempora harum itaque ex recusandae quos
+              tempore facilis voluptates quasi voluptas?
+            </p>
 
-              <button class="main-button">Explore</button>
-            </div>
-            <div class="row main-card profile-card align-items-middle">
-              <div class="profile">
-                <div class="profile-image">
-                  <img src="images/profile_image.svg" alt="" />
-                </div>
-
-                <div class="profile-info">
-                  <h5>John Doe</h5>
-                  <img src="images/stars.svg" alt="" />
-                </div>
+            <button class="main-button">Explore</button>
+          </div>
+          <div class="row main-card profile-card align-items-middle">
+            <div class="profile">
+              <div class="profile-image">
+                <img src="images/profile_image.svg" alt="" />
               </div>
 
-              <p>Lorem ipsum dolor sit amet.</p>
+              <div class="profile-info">
+                <h5>John Doe</h5>
+                <img src="images/stars.svg" alt="" />
+              </div>
             </div>
-          </div>
 
-          <div class="main-card plant-card col-lg-4 col-md-12 col-sm-12 col-12">
-            <div class="image-container">
-              <img
-                src="images/Rose Gold Feminine Calligraphy Monogram Logo(15) 3.svg"
-                alt="Plant Image"
-              />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div id="carouselExampleAutoplaying"
+          class="carousel slide main-card plant-card col-lg-4 col-md-12 col-sm-12 col-12" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="image-container">
+                <img src="images/plant1.svg" alt="Plant Image" />
+              </div>
+              <div class="content">
+                <h2 class="plant-name">Plant Name</h2>
+                <p class="description">
+                  Description of the plant goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+                <button class="main-button">Buy Now</button>
+              </div>
             </div>
-            <div class="content">
-              <h2 class="plant-name">Plant Name</h2>
-              <p class="description">
-                Description of the plant goes here. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-              </p>
-              <button class="main-button">Buy Now</button>
+            <div class="carousel-item">
+              <div class="image-container">
+                <img src="images/plant1.svg" alt="Plant Image" />
+              </div>
+              <div class="content">
+                <h2 class="plant-name">Plant Name</h2>
+                <p class="description">
+                  Description of the plant goes here. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+                <button class="main-button">Buy Now</button>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <section class="trendy">
+        <div class="section-label">
+          <h2 class="section-title">Our Trendy Plants</h2>
+
+        </div>
+        <div class="main-card trend-card row justify-content-around">
+          <div class="image-container col-lg-4 col-md-4">
+            <img src="images/plant1.svg" alt="Plant Image" />
+          </div>
+          <div class="content col-lg-7 col-md-6">
+            <h3 class="plant-name">Plant Name</h3>
+            <p class="description">
+              Description of the plant goes here. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <h2 class="price">599 EGP</h2>
+            <button class="main-button">Explore</button>
+            <div class="main-button icon-button">
+              <i class="fa-solid fa-bag-shopping"></i>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!------- End Landing Section ------->
+        <div class="main-card trend-card row justify-content-around">
+          <div class="image-container col-lg-4 col-md-4">
+            <img src="images/plant1.svg" alt="Plant Image" />
+          </div>
+          <div class="content col-lg-7 col-md-6">
+            <h3 class="plant-name">Plant Name</h3>
+            <p class="description">
+              Description of the plant goes here. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+            <h2 class="price">599 EGP</h2>
+            <button class="main-button">Explore</button>
+            <div class="main-button icon-button">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Popper.js is required in order to support dropdowns -->
-    <script src="js/popper.js"></script>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+  </section>
+  <!------- End Landing Section ------->
 
-    <!-- Jquery js file -->
-    <script src="js/jquery.min.js"></script>
 
-    <!-- Bootstrap js file -->
-    <script src="js/bootstrap.js"></script>
+  <!-- Popper.js is required in order to support dropdowns -->
+  <script src="js/popper.js"></script>
 
-    <!-- Main js file -->
-    <script src="js/main.js"></script>
+  <!-- Jquery js file -->
+  <script src="js/jquery.min.js"></script>
 
-    <!-- font icons library -->
-    <script
-      src="https://kit.fontawesome.com/5b27603069.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Bootstrap js file -->
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Main js file -->
+  <script src="js/main.js"></script>
+
+  <!-- font icons library -->
+  <script src="https://kit.fontawesome.com/5b27603069.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
