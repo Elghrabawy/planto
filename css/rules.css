@@ -20,3 +20,79 @@ body {
     color: white;
     /* overflow: hidden; */
 }
+
+
+.section-label {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    height: 80px;
+    padding: 20px;
+    position: relative;
+    background-color: #6667773a;
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+}
+
+
+.section-title {
+    width: fit-content;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 75px;
+
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 100px 80px rgba(0, 0, 0, 0.36), 0px 50.0488px 40.0391px rgba(0, 0, 0, 0.27372), 0px 30.1471px 24.1177px rgba(0, 0, 0, 0.234572), 0px 19.3198px 15.4559px rgba(0, 0, 0, 0.205522), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.18), 0px 7.88218px 6.30574px rgba(0, 0, 0, 0.154478), 0px 4.5288px 3.62304px rgba(0, 0, 0, 0.125428), 0px 1.99324px 1.59459px rgba(0, 0, 0, 0.0862802);
+}
+
+
+@media (max-width: 1200px) {
+    .section-title {
+        font-size: 70px;
+        top: -40px;
+    }
+}
+
+@media(max-width: 992px) {
+    .section-title {
+        font-size: 48px;
+        top: -30px;
+    }
+
+    .section-label {
+
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 35px;
+        top: -25px;
+    }
+
+    .section-label {
+
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 25px;
+        top: -20px;
+    }
+
+    .section-label {
+
+        height: 30px;
+    }
+}
