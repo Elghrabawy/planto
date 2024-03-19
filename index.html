@@ -48,7 +48,16 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Planto</h5>
+            <a
+              class="navbar-brand me-auto offcanvas-title"
+              id="offcanvasNavbarLabel"
+              href="#"
+            >
+              <img src="images/logo.svg" width="40px" alt="" />
+              <span class="brand-name">
+                Planto
+              </span>
+            </a>
             <button
               type="button"
               class="btn-close"
@@ -62,17 +71,26 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Plants Type</a>
+                <a class="nav-link" aria-current="page" href="#trendy"
+                  >Trendy</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">More</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">About</a>
+                <a class="nav-link" aria-current="page" href="#top-selling"
+                  >Best Sell</a
+                >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Contact</a>
+                <a class="nav-link mx-lg-2" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#customer-review">Reviews</a>
               </li>
             </ul>
           </div>
@@ -98,7 +116,7 @@
     <!--------- End navbar --------->
 
     <!------- Landing Section ------->
-    <section class="home-section">
+    <section id="home" class="home-section">
       <div class="block"></div>
       <div class="container">
         <div class="row justify-content-around align-items-center">
@@ -212,7 +230,7 @@
             </button>
           </div>
         </div>
-        <section class="trendy">
+        <section id="trendy" class="trendy">
           <div class="section-label">
             <h2 class="section-title">
               Our Trendy Plants
@@ -263,7 +281,7 @@
     <!------- End Landing Section ------->
 
     <!----------- Top Selling ----------->
-    <section class="top-selling">
+    <section id="top-selling" class="top-selling">
       <div class="container">
         <div class="section-label">
           <h2 class="section-title">
@@ -414,7 +432,7 @@
     <!---------- End of Top Selling Plants Section ---------->
 
     <!--------------- Customer Review Section --------------->
-    <section class="customer-review">
+    <section id="customer-review" class="customer-review">
       <div class="container">
         <div class="section-label">
           <h2 class="section-title">
@@ -483,7 +501,7 @@
     <!------------------------- Footer ------------------------->
     <footer>
       <div class="container">
-        <div class="row justify-content-aroundp-4">
+        <div id="about" class="row justify-content-aroundp-4">
           <div class="brand-info col-lg-5">
             <div class="logo">
               <img src="images/logo.svg" width="55px" alt="" />
@@ -506,13 +524,13 @@
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">Types of plants</a>
+                <a href="#trendy">Tredy Plants</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#top-selling">Top Selling</a>
               </li>
               <li>
-                <a href="#">Privacy</a>
+                <a href="#customer-review">Customer Reviews</a>
               </li>
             </ul>
           </div>
@@ -539,7 +557,7 @@
             </div>
           </div>
         </div>
-        <div class="footbar">
+        <div id="contact" class="footbar">
           <div class="contact">
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
