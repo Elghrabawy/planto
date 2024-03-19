@@ -17,5 +17,6 @@ body {
     background-color: #171f12;
     background-size: cover;
     height: auto;
+    color: white;
     /* overflow: hidden; */
 }

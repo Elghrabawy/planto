@@ -219,9 +219,10 @@
     transition: background-color 0.3s;
 }
 
+/* 
 .main-button:hover {
     background-color: #ffffff4f;
-}
+} */
 
 .profile-info {
     width: 40%;
@@ -643,4 +644,88 @@
     .customer-review .container .profile-card p {
         font-size: 13px;
     }
+}
+
+/*********** End Customer Review ***********/
+
+/****************** Footer ******************/
+footer {
+    background-color: #222c1d;
+}
+
+footer .brand-info {
+    margin: 30px 0px
+}
+
+footer .links,
+footer .get-update {
+    margin: 50px 0px
+}
+
+footer .brand-info .logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 20px;
+}
+
+footer .brand-info .logo .brand-name {
+    font-size: 35px;
+}
+
+footer .brand-info p {
+    margin: 20px;
+}
+
+footer .brand-info a {
+    text-decoration: none;
+}
+
+
+footer .links ul {
+    padding: 0px;
+}
+
+footer .links ul li {
+    margin: 10px 0px;
+    list-style-type: none;
+}
+
+footer .links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+footer .get-update h5,
+footer .links h5 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footbar .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.footbar .contact a {
+    font-size: 30px;
+    color: rgb(187, 187, 187);
+
+}
+
+.footbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.footbar p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+    margin: 20px
 }
